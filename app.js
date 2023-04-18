@@ -1,35 +1,35 @@
 // console.log("Hello World!\n==========\n");
 
-// // Exercise 1 Section
-// console.log("EXERCISE 1:\n==========\n");
-// const arr1=[32, 33,65,67]
-// let sum=0;
-// arr3.array.forEach((sum,i,arr3) => {
-//     sum+=arr3[i];
-//     console.log(sum)
-// });
-// // Exercise 2 Section
-// console.log("EXERCISE 2:\n==========\n");
-//const book={
-    //title:"Lord of the rings",
-    //author:"JRR TOLKIEN",
-    //noOfPages:479,
-    //haveRead: true,
-    //readCount:2,
-    //info:function(){
-        //return(
-            //this.title,
-            //this.author,
-            //this.noOfPages,
-            //this.haveRead,
-            //this.readCount,
-        //)
-    //}
-//}
+// Exercise 1 Section
+console.log("EXERCISE 1:\n==========\n");
+const arr1=[32, 33,65,67];
+let sum=0;
+let index=0
+arr1.forEach((sum,index) => {
+    sum=sum+arr1[index];
+    index++;
+    console.log(sum);
+});
+//Exercise 2 Section
+console.log("EXERCISE 2:\n==========\n");
+const book={
+    title:"Lord of the rings",
+    author:"JRR TOLKIEN",
+    noOfPages:479,
+    haveRead: true,
+    readCount:2,
+    info:function(){
+        return(
+            this.title,
+            this.author,
+            this.noOfPages,
+            this.haveRead,
+            this.readCount
+        );
+    }
+}
 
-//book.info(){
-    //console.log(`${this.title} written by ${this.author}`)
-//}
+book.info();
 
 //book.info()
 
@@ -37,9 +37,9 @@ let sentence = "The quick brown fox jumps over the lazy dog";
 
 
    
-// for(let i=letters.length-1; i>=0; i--){
-//     console.log(letters[i]);
-// }
+for(let i=letters.length-1; i>=0; i--){
+    console.log(letters[i]);
+}
 function reverseword(sentence){
     let result=[];
     let words=sentence.split(" ");
